@@ -1,0 +1,99 @@
+.bottom-buffer {
+    margin-bottom: 40px;
+}
+
+.img-fluid {
+    padding: 10px;
+}
+
+.carousel-inner {
+    width: 50%;
+    height: 75%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding-left: 2vw;
+    padding-top: 2vw;
+}
+
+p {
+    padding-left: 2vw;
+}
+
+a {
+    padding-left: 2vw;
+}
+
+.nav-item {
+    padding-left: 2vw;
+}
+
+.navbar-brand {
+    padding-left: 2vw;
+}
+
+/* Define styles for the navigation bar */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar-nav li a {
+    color: #333;
+}
+
+.navbar-nav li.active a {
+    background-color: #f2f2f2;
+}
+
+
+
+/* Define styles for buttons */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.rowGallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.columnGallery {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.columnGallery img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media only screen and (max-width: 800px) {
+    .columnGallery {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
