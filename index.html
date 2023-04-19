@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<!--Credit: Emily Zhou, Shenendehowa Class of 2023-->
+<html>
+
+<head>
+    <link rel="shortcut icon" href="images/favicon.png?">
+    <link rel="icon" sizes="192x192" href="images/favicon.png?" />
+    <script src="script.js"></script>
+    <title>SHDN</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="openTab(event, 'Home')">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand">SHDN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-item nav-link active tablinks" onclick="openTab(event, 'Home')">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link tablinks" onclick="openTab(event, 'Exhibits')">Exhibits</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link tablinks" onclick="openTab(event, 'Sponsors')">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link tablinks" onclick="openTab(event, 'Registration')">Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link tablinks" onclick="openTab(event, 'Gallery')">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link tablinks" onclick="openTab(event, 'ContactUs')">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Science and Health Discovery Night</h1>
+    <div id="Home" class="tabcontent">
+        <h4>Friday, April 21, 2023 • 6:00-8:30 PM</h4>
+        <h4>Shenendehowa High School East, Clifton Park, NY</h4>
+        <p style="text-align: center;font-size: 20vh; padding-top: 20vh;" id="timer"></p>
+    </div>
+    <div id="Exhibits" class="tabcontent">
+        <h2>Exhibits</h2>
+        <div class="container">
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>#CompostCliftonPark</h3>
+                    <h4>Exhibitor: Composting</h4>
+                    <p>Be educated about composting and be given a demo.</p>
+                    <a href="https://compostcliftonpark.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Adirondack Scuba</h3>
+                    <h4>Exhibitor: Scuba Diving</h4>
+                    <p>See a scuba setup and how it works</p>
+                    <a href="https://www.adkdive.com/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Albany Area Amateur Astronomers</h3>
+                    <h4>Exhibitor: AAAA Celestron Starsense Explorer DX 102AZ Refractor Telescope</h4>
+                    <p>Get to use a telescope guided by an app on a smartphone. </p>
+                    <a href="http://dudleyobservatory.org/AAAA/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Albany Area Amateur Astronomers</h3>
+                    <h4>Exhibitor: Astronomy</h4>
+                    <p>Telescope and handouts</p>
+                    <a href="http://dudleyobservatory.org/AAAA/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Albany Area Amateur Astronomers</h3>
+                    <h4>Exhibitor: Astronomy and Astrophotography</h4>
+                    <p>Participants will discuss and answer questions related to amateur astronomy and astrophotography,
+                        demonstrate the types of tools used in the hobby, and weather permitting allow for observing of
+                        the sun early one and then some brighter night sky objects after sunset.</p>
+                    <a href="http://dudleyobservatory.org/AAAA/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Albany Pine Bush Preserve Commission</h3>
+                    <h4>Exhibitor: Albany Pine Bush Preserve Commission</h4>
+                    <p>Engage with commission staff to discuss a myriad of topics pertaining to the Albany Pine Bush.
+                    </p>
+                    <a href="https://www.albanypinebush.org/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Always Healthy Chiropractic</h3>
+                    <h4>Exhibitor: Chiropractic Painting</h4>
+                    <p>Skeleton painting & identify bones</p>
+                    <a href="https://saratogachiro.com/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Art & Science Dentistry</h3>
+                    <h4>Exhibitor: Your Dental Environment</h4>
+                    <p>Participants will learn what makes for a healthy oral environment vs what can be harmful for your
+                        oral environment.</p>
+                    <a href="https://asd-ny.com/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>ASAPC</h3>
+                    <h4>Exhibitor: The Prevention Council</h4>
+                    <p>Substance us prevention Demo of "smokers Lungs"</p>
+                    <a href="https://preventioncouncil.org/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Ashley Allen </h3>
+                    <h4>Exhibitor: Fizzy Eggs </h4>
+                    <p>Chemical reaction of baking and vinegar mixing together to fizz and bubble </p>
+                </div>
+                <div class="col-sm">
+                    <h3>Belanger School of Nursing</h3>
+                    <h4>Exhibitor: Belanger School of Nursing</h4>
+                    <p>Participants will be able to engage in hands-on activities related to the nursing field and
+                        receive information on nursing school.</p>
+                    <a href="https://www.ellismedicine.org/school-of-nursing/default.aspx">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Biomedical Club</h3>
+                    <h4>Exhibitor: Biomedical Life Applications</h4>
+                    <p>Participants will learn all about the importance of personal hygeine</p>
+                    <a href="https://www.instagram.com/shenbiomedclub/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Brave Lion Mind</h3>
+                    <h4>Exhibitor: Your Magnificent Mindful Brain</h4>
+                    <p>Participants will learn how they can exercise and train their magnificent brain with simple
+                        mindfulness tools and practices!</p>
+                    <a href="https://www.bravelionmind.com/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>CAPTAIN Community Human Services</h3>
+                    <h4>Exhibitor: CAPteens Facepainting</h4>
+                    <p>We will be facepainting science related items for the kids!</p>
+                    <a href="https://captaincares.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Cave House Museum of Mining and Geology</h3>
+                    <h4>Exhibitor: The Cave House Museum of Mining and Geology</h4>
+                    <p>History and Geology of Howes Cave</p>
+                    <a href="https://visitschohariecounty.com/listing/cave-house-museum-of-mining-geology">Exhibitor
+                        site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>CDYMCA- Southern Saratoga Branch</h3>
+                    <h4>Exhibitor: CDYMCA- Southern Saratoga Branch</h4>
+                    <p>We will be doing two health challenges that day! Looking at things that are trending on social
+                        media! We will have everything at our table for them to do the challenges as well as an
+                        explanation to how and why they are able or unable to complete the challenge!</p>
+                    <a href="https://cdymca.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Center for Internet Security</h3>
+                    <h4>Exhibitor: Cybersecurity Exhibit </h4>
+                    <p>Participants will come to our booth to learn about cybersecurity and how to stay safe online.
+                        They will have a selection of games and activities to choose from including a word scramble,
+                        mini-poster contest, password cracking, write your name in binary code, and spot the phish. </p>
+                    <a href="https://www.cisecurity.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Center for Vascular Awerness</h3>
+                    <h4>Exhibitor: V-Healthy</h4>
+                    <p>Participants will learn to take blood pressures as well as learn what it is classified under.
+                    </p>
+                    <a href="https://myvascularhealth.org/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Clifton Park & Halfmoon EMS</h3>
+                    <h4>Exhibitor: Clifton Park & Halfmoon EMS</h4>
+                    <p>Participants will be able to see an ambulance and our equipment. We will bring our simulation
+                        manikin, our ventilator, and other tools we regularly use in our job. Participants will be able
+                        to ask questions about how to become an EMT or Paramedic. </p>
+                    <a href="https://cphmems.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Clifton Park Elks</h3>
+                    <h4>Exhibitor: Drug Awareness</h4>
+                    <p>Learn about Drug Awareness and will win various Elks prizes for students and parents for visiting
+                        our table.</p>
+                    <a href="https://www.elks.org/lodges/home.cfm?lodgenumber=2466">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Clifton Park GREEN Committee</h3>
+                    <h4>Exhibitor: Clifton Park GREEN Committee Tree Hand Out</h4>
+                    <p>Participants will have an educational display and hand out tree seedlings. We will also have
+                        hands on weatherization training and composting techniques</p>
+                    <a href="https://www.cliftonpark.org/committees-commissions/g-r-e-e-n-committee.html">Exhibitor
+                        site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Clifton Park Parks and Rec</h3>
+                    <h4>Exhibitor: Clifton Park Parks and Rec</h4>
+                    <p>TBD</p>
+                    <a href="https://www.cliftonpark.org/departments/parks-recreation.html">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Clifton Park-Halfmoon Pubic Library</h3>
+                    <h4>Exhibitor: The Library Makes Your Brain Smarter!</h4>
+                    <p>Participants will get to see some real brains! We will also be showcasing some of the more
+                        unexpected items that you can check-out at the public library. All of which can help make your
+                        brain smarter. </p>
+                    <a href="https://cphlibrary.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Code Ninjas</h3>
+                    <h4>Exhibitor: Coding With Code Ninjas</h4>
+                    <p>Learn how to code their own games using a few different platforms</p>
+                    <a href="https://www.codeninjas.com/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Cornell Cooperative Extension Office Saratoga County </h3>
+                    <h4>Exhibitor: The Future of Agriculture is you</h4>
+                    <p>Students will be able to interact with different career options in agriculture that revolve
+                        around Science, Technology, and Math. Showing them how big and influential the world of
+                        agriculture really is.</p>
+                    <a href="https://ccesaratoga.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Curtis Lumber Co.</h3>
+                    <h4>Exhibitor: Curtis Lumber Co.</h4>
+                    <p>Participants will get to use a VR head set to view what it is really like at Curtis Lumber!
+                        Hoping to get some hands on activities as well, lifting lumber, feeling PPE, etc.</p>
+                    <a href="https://www.curtislumber.com/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>DJ Conover</h3>
+                    <h4>Exhibitor: DJ</h4>
+                    <p></p>
+                    <a href="">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Empire State Aerosciences Museum</h3>
+                    <h4>Exhibitor: Flight Simulators</h4>
+                    <p>Participants will use plane flight simulator software and joysticks to fly and land planes.</p>
+                    <a href="https://www.esam.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Epilepsy Foundation of Northeastern New York</h3>
+                    <h4>Exhibitor: EFNENY</h4>
+                    <p>Participants will be able to see different 'brains' and learn about what different parts of the
+                        brain do. There will be brain shaped stress balls to give away to students who interact with the
+                        exhibit</p>
+                    <a href="https://www.epilepsy.com/local/northeastern-new-york">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Family Chiropractic & Wellness</h3>
+                    <h4>Exhibitor: Health & Wellness</h4>
+                    <p>Posture check, Neck, mid to lower back pain, importance of chiropractic care..Health, nutrition
+                        and wellness, Healing from injuries</p>
+                    <a href="">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Fidelis Care</h3>
+                    <h4>Exhibitor: Fidelis</h4>
+                    <p>Health-related activities</p>
+                    <a href="https://www.fideliscare.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Fitness Professionals On Demand, LLC</h3>
+                    <h4>Exhibitor: A "Sugar Buster" helper for students </h4>
+                    <p>Students will practice using the food label to pick drinks and snacks with less sugar. A bouncing
+                        ball and parent fact sheet about sugar will be given to all participants. The activity will
+                        emphasize that sugar is fine in small amounts, but too much can lead to students gaining weight,
+                        developing acne and other health problems. Exercises will focus on sugary drinks as they are the
+                        key driver of our overeating of added sugars the snacks and sweets which are next in line. </p>
+                    <a href="https://www.fitnessprofessionalsondemand.com/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Forensic Science Classes</h3>
+                    <h4>Exhibitor: Fun with Forensics</h4>
+                    <p>Multiple stations with hand on materials to show different forms of evidence</p>
+                    <a href="https://shenet.org/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Garden Club</h3>
+                    <h4>Exhibitor: Aquaponics Display</h4>
+                    <p>Participants will learn about the science of aquaponics and its practicality, as well as the
+                        sustainable future of agriculture. After listening to their explanation, they will plant a
+                        vegetable or fruit seed in aquaponics media and take it home. The display will consist of an
+                        informational poster, a functioning aquaponics display with fish, as well as a collection of
+                        plants, vegetables, and fruits grown in garden club's aquaponics system.</p>
+                    <a href="https://shenet.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Girl Scout Emily Strife</h3>
+                    <h4>Exhibitor: Bat Houses and Bee Hotels</h4>
+                    <p>Participants will learn about Emily's Girl Scout Gold Award project, She has been manufacturing
+                        bat houses and her hotels while also curating a website to show how people in our community can
+                        help with ecological conservation in our own backyards</p>
+                    <a href="https://gf.com/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>GlobalFoundries</h3>
+                    <h4>Exhibitor: Semiconductors are Everywhere!</h4>
+                    <p>Participants can try out Snap Circuits activities: Conduction Detector, to test out different
+                        materials (including play-doh) to see which ones conduct, and creating Spin Art using a spinning
+                        fan and markers. Students can try on bunny suits and learn that semiconductors are found in the
+                        many devices we use every day.</p>
+                    <a href="https://gf.com/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Go Kids</h3>
+                    <h4>Exhibitor: Go Kids</h4>
+                    <p>Obstacle Courses</p>
+                    <a href="https://www.123gokids.com/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Guiding Eyes for the Blind</h3>
+                    <h4>Exhibitor: Guiding Eyes for the Blind</h4>
+                    <p>Engage with guide dog pups in training, learn about what it takes for these pups to develop
+                        skills for their future job</p>
+                    <a href="https://www.guidingeyes.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Hannaford Supermarkets</h3>
+                    <h4>Exhibitor: Nutrition</h4>
+                    <p>Various nutrition-related information</p>
+                    <a href="https://www.hannaford.com/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Houghton Mifflin Harcourt</h3>
+                    <h4>Exhibitor: HMH Science</h4>
+                    <p>View our newest Science materials </p>
+                    <a href="https://www.hmhco.com/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Ingrid and AJ Betzwieser</h3>
+                    <h4>Exhibitor: Turtles and Exotics</h4>
+                    <p>Several turtles and tortoises, some indigenous to New York state, and potentially some other
+                        exotic animals on display. A couple of the animals will be allowed to be interacted with. The
+                        purpose of the exhibit is to bring knowledge and understanding of these animals to a more public
+                        forum, as some turtles in New York are critically endangered and others are heading that way. As
+                        more of our local wild lands are filled in, in and around the habitats that these turtles and
+                        other wild life are in, it is important to have understanding of them so that public's
+                        interactions with them can be positive ones.</p>
+                </div>
+                <div class="col-sm">
+                    <h3>Knolls Atomic Power Lab</h3>
+                    <h4>Exhibitor: Electricity and Magnetism</h4>
+                    <p>Van der Graff, eddy currents , and super magnetic</p>
+                    <a href="https://navalnuclearlab.energy.gov/knolls-atomic-power-laboratory/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Kona Ice of Clifton Park</h3>
+                    <h4>Exhibitor: Food Truck</h4>
+                    <p>MENU:</p>
+                    <a href="https://www.kona-ice.com/flavorwave/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Malta Animal Hospital</h3>
+                    <h4>Exhibitor: People Helping Pets</h4>
+                    <p>Be able to explore the world of Veterinary Science. Hands on learning- listen to a dog's
+                        heartbeat! Learn how to prevent animal disease.</p>
+                    <a href="https://maltavet.com/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Malta5k Trail Race</h3>
+                    <h4>Exhibitor: Timed Racing</h4>
+                    <p>Run across finish line and be timed. If desired, can compare times for potential age group prize
+                        toward end of event (8pm)</p>
+                    <a href="http://www.malta5k.com/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Mathcounts Club</h3>
+                    <h4>Exhibitor: Mathcounts Club</h4>
+                    <p>Meet club members, play the Tower of Hanoi, and try your hand at Mathcounts questions!</p>
+                    <a href="https://shenet.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Mathnasium of Clifton Park</h3>
+                    <h4>Exhibitor: Mathnasium of Clifton Park</h4>
+                    <p>Multiple math activities</p>
+                    <a href="https://www.mathnasium.com/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Mike's Hot Dogs</h3>
+                    <h4>Exhibitor: Food Truck</h4>
+                    <p>MENU:</p>
+                    <a href="https://www.facebook.com/people/Mikes-Hot-Dogs/100064064346565/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Mom's Program </h3>
+                    <h4>Exhibitor: Developing Structures of Mammals</h4>
+                    <p>Will have an incubator w/fertilized eggs that students can see structures developing within/ Can
+                        also have posters of human babies w/in the womb, so that they can be compared and shown
+                        similarities. Discussions on these topics.</p>
+                    <a href="https://www.sphp.com/assets/documents/maternity/cfc-moms_bro.pdf">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Momentive Performance Materials</h3>
+                    <h4>Exhibitor: Momentive Performance Materials</h4>
+                    <p>Have product offerings, commercial pamphlets, give-aways, chemistry demos</p>
+                    <a href="https://www.momentive.com/en-us">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>N2, Inc.</h3>
+                    <h4>Exhibitor: Jewels of the Sea</h4>
+                    <p>A traveling display representative of our seashell museum with seashells and sea life both of the
+                        eastern seaboard and world oceans. A comprehensive collection with many specimens not usually
+                        seen in an exhibit of this nature. this includes a display of the true 3d photographs of the
+                        species in the larger collection.</p>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>National Art Honor Society</h3>
+                    <h4>Exhibitor: Art of the Body</h4>
+                    <p>Participant will gather and create art works based human anatomy and biology.</p>
+                    <a href="https://www.instagram.com/shen_nahs/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>New York State Mesonet</h3>
+                    <h4>Exhibitor: New York State Mesonet</h4>
+                    <p>Participants will learn how to access their "backyard" weather station and explore different
+                        types of instruments used to collect weather data.</p>
+                    <a href="http://nysmesonet.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>News10 ABC</h3>
+                    <h4>Exhibitor: News10's Mobile Storm Tracker</h4>
+                    <p>Participants will take a tour of the station's Mobile Storm Tracker vehicle, learning about the
+                        high-tech weather instruments on board and seeing what it takes to put on a live television
+                        broadcast!</p>
+                    <a href="https://www.news10.com/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>NXT Robots</h3>
+                    <h4>Exhibitor: NXT Robots</h4>
+                    <p>Programming NXT robots to do a variety of maneuvers </p>
+                    <a href="https://nxtrobotics.com/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Regeneron Pharmaceuticals, Inc.</h3>
+                    <h4>Exhibitor: Explore STEM at Regeneron</h4>
+                    <p>Participants will learn about Regeneron's science-to-medicine work through an interactive
+                        exhibit.</p>
+                    <a href="https://www.regeneron.com/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>RPI Science Ambassadors</h3>
+                    <h4>Exhibitor: Speeding Your Way to the Finish Line</h4>
+                    <p>The exhibit is on catalysts and how they affect the rate of chemical reactions. We discuss the
+                        basics of how catalysts work as well as examples that you see in everyday life and in our own
+                        bodies. The hands-on activity is a lava lamp building activity, where we will explore how
+                        temperature works as a catalyst to affect how fast reactions proceed.</p>
+                    <a href="https://www.rpi.edu/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>RPI SPS</h3>
+                    <h4>Exhibitor: RPI Society of Physics Students</h4>
+                    <p>The exhibit will include some cool physics demonstrations built and presented by physics students
+                        at Rensselaer Polytechnic Institute. A few examples of our demonstrations include a Van de
+                        Graaff generator, liquid nitrogen demonstrations, a gravity table, and optics experiments using
+                        a neon source and diffraction glasses.</p>
+                    <a href="https://www.rpi.edu/dept/phys/sps/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Saratoga County Chamber</h3>
+                    <h4>Exhibitor: Saratoga County Chamber of Commerce</h4>
+                    <p>Will provide information about the Saratoga County Chamber of Commerce and have tourism
+                        information on Saratoga County. We are also working with The Children's Museum at Saratoga to
+                        have an exhibit for the students- still working on it though so don't have information yet.
+                        Request our table be somewhat near their table if possible.</p>
+                    <a href="https://www.saratoga.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Saratoga County Department of Health</h3>
+                    <h4>Exhibitor: Clean Hands Save Lives</h4>
+                    <p>Participants will learn about proper hand hygiene to prevent the spread to germs. </p>
+                    <a href="https://www.saratogacountyny.gov/departments/health/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Saratoga County Department of Mental Health & Addictions </h3>
+                    <h4>Exhibitor: Saratoga County Department of Mental Health & Addictions </h4>
+                    <p>Participants will learn about youth mental health and community resources. </p>
+                    <a href="https://www.saratogacountyny.gov/departments/mental-health-center/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Savvas Learning Company</h3>
+                    <h4>Exhibitor: Experience Science with Savvas- It?s Phenomenal!</h4>
+                    <p>Participate in a Sail Car races (STEM Activity)</p>
+                    <a href="https://www.savvas.com/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Shen/ESAM</h3>
+                    <h4>Exhibitor: Airplane Simulator</h4>
+                    <p>Tech Room 130 xPlane Flight Simulation</p>
+                    <a href="https://www.esam.org/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Shenendehowa Environment Club</h3>
+                    <h4>Exhibitor: Environment Club</h4>
+                    <p>Particpants will decorate seed paper bookmarks, learn to make a mason bee home/ bird feeder using
+                        upcycled plastic bottles, compost, contribute to a bottle cap artwork, and possibly make their
+                        own paper out of recycled paper!</p>
+                    <a href="https://www.instagram.com/shenenvironment/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Shenendehowa High School East - AP Biology</h3>
+                    <h4>Exhibitor: Bringing Biology To Life</h4>
+                    <p>Explore biology through hands-on activities, such as feeding microorganisms under a microscope
+                        and experimenting with isopod behavior.</p>
+                    <a href="https://shenet.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Shenendehowa HS PTSA</h3>
+                    <h4>Exhibitor: How Full is Your Cup?</h4>
+                    <p>Participants will receive info on stress management and self-care. We'll also have drinks,
+                        bracelets</p>
+                    <a href="https://sites.google.com/view/shenhsptsa/home">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Shenendehowa HS PTSA</h3>
+                    <h4>Exhibitor: PTA Connected - Create With Kindness</h4>
+                    <p>Being responsible, being safe, and being kind online. How it affects us and the effects it has on
+                        others. </p>
+                    <a href="https://sites.google.com/view/shenhsptsa/home">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Shenendehowa MakerSpace Club</h3>
+                    <h4>Exhibitor: MakerSpace</h4>
+                    <p>Learn all about 3D printing, view super cool 3D printed objects!</p>
+                    <a href="https://shenet.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Shenendehowa Middle School FLL Robotics</h3>
+                    <h4>Exhibitor: Middle School FLL Robotics Demo</h4>
+                    <p>Participants would observe demos of robotic mission runs. Participants will also be given an
+                        opportunity to program a spike prime to complete simple tasks.</p>
+                    <a href="https://shenet.org/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Shenendehowa MS Future Cities</h3>
+                    <h4>Exhibitor: Future Cities Club</h4>
+                    <p>Demonstrate their city Model and talk about their experience competing</p>
+                    <a href="https://futurecity.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Shenendehowa Mu Alpha Theta</h3>
+                    <h4>Exhibitor: Giant Bubble!</h4>
+                    <p>Students will be able to experience being inside a giant bubble! Learn about the science behind
+                        bubbles and math behind the volume of a cylinder formula</p>
+                    <a href="https://www.instagram.com/shen_mhs/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Shenendehowa Musical Company </h3>
+                    <h4>Exhibitor: The Science of Singing </h4>
+                    <p>We are going to talk about how expanding the diaphragm increases resonance, how singing releases
+                        endorphins, how sounds travels, measuring decibels when slouching versus having good singing
+                        posture, and fun stuff like that! </p>
+                    <a href="https://www.instagram.com/shenendehowadrama/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Shenendehowa Parent Jean Collazo</h3>
+                    <h4>Exhibitor: The Science of Jenga</h4>
+                    <p>Participants will have the opportunity to "play" Jenga all with an explanation of the concepts of
+                        gravity, tension, and compession. </p>
+                    <a href="https://shenet.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Shenendehowa Rowing</h3>
+                    <h4>Exhibitor: Shenendehowa Rowing</h4>
+                    <p>Shenendehowa Rowing team members will engage fair participants in STEM activities using a rowing
+                        machine such as how to graph watts used during a ten-stroke section of rowing. </p>
+                    <a href="https://www.shenendehowarowing.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Shenendehowa Science Bowl</h3>
+                    <h4>Exhibitor: Alka Seltzer Fizz Race</h4>
+                    <p>Demonstrate to students the effect of surface area and temperature in the rate of a reaction
+                        utilizing alka seltzer tablets and water.</p>
+                    <a href="https://science.osti.gov/wdts/nsb">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Shenendehowa SNHS</h3>
+                    <h4>Exhibitor: Ferrofluid!</h4>
+                    <p>Creating a ferrofluid in order to demonstrate the function of ferromagnetism</p>
+                    <a href="https://www.instagram.com/shensnhs/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Shenendehowa SNHS</h3>
+                    <h4>Exhibitor: LEGO Boat Challenge</h4>
+                    <p>Design a boat made out of legos and test in in a pool of water, testing to see how many pennies
+                        the boat can hold before it sinks</p>
+                    <a href="https://www.instagram.com/shensnhs/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Shenendehowa SNHS</h3>
+                    <h4>Exhibitor: PVA Slime</h4>
+                    <p>Using PVA to create fun slime!</p>
+                    <a href="https://www.instagram.com/shensnhs/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Shenendehowa SNHS</h3>
+                    <h4>Exhibitor: Slime</h4>
+                    <p>Participants will be able to make slime with materials that we will provide.</p>
+                    <a href="https://www.instagram.com/shensnhs/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Shenendehowa Society of Women Engineers Next (Shenendehowa SWENext)</h3>
+                    <h4>Exhibitor: SWENext Engineering Booth</h4>
+                    <p>Fluids/Buoyancy-themed booth with aluminum foil boats. We are also planning to have kids
+                        calculate the amount of pennies that a boat could hold before sinking and teach them the physics
+                        behind this experiment</p>
+                    <a href="https://www.instagram.com/swenext.shen/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Shenendehowa Teacher Ben Early</h3>
+                    <h4>Exhibitor: The Power of Liquid Nitrogen</h4>
+                    <p>Students will see some small LN2 demos (shrinking of an air filled balloon, crushing of a
+                        marshmallow) and then will see a controlled detonation of a small amount of LN2 in a 2L plastic
+                        soda bottle under a garbage can. This will cause the garbage can to fly 20-40 ft into the air
+                        with a loud bang.</p>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Siena College</h3>
+                    <h4>Exhibitor: Siena Mathematics</h4>
+                    <p>In general, we will talk about the beauty of mathematics and the advantages of studying
+                        mathematics at college. We will demonstrate what it looks like research in math, applied math,
+                        or statistics, and share some undergraduate research conducted at Siena. In addition, we will
+                        talk about career options with a math degree.</p>
+                    <a href="https://www.siena.edu/programs/mathematics/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Silent Wings</h3>
+                    <h4>Exhibitor: Silent Wings </h4>
+                    <p>Learn about the lives of owls, hawks, eagles, and falcons. Expore conservation issues, including
+                        human influences, that affect these wonderful birds!</p>
+                    <a href="https://www.silentwingsraptors.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Smith's Smokeshack</h3>
+                    <h4>Exhibitor: Food Truck</h4>
+                    <p>MENU:</p>
+                    <a href="https://www.smithssmokeshack.com/food-truck-menu">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>SNHS Sustainability Committee</h3>
+                    <h4>Exhibitor: Wildflower Seed Bombs</h4>
+                    <p>Participants will learn the importance of native wildflower species in our area and the affects
+                        of habitat loss on native pollinators and other species. After, they will learn how to make seed
+                        bombs with native wildflower species, which are small balls of dried clay and seeds that are
+                        thrown in fields or empty lots to grow wildflowers. After making their seed bomb, they will
+                        bring it home.</p>
+                    <a href="https://www.instagram.com/shensnhs/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Southern Adirondack Beekeepers Association</h3>
+                    <h4>Exhibitor: The Amazing Honey Bee</h4>
+                    <p>Discover the amazing features of the social honey bee, their ability to pollinate and how they
+                        make delicious honey. Adventure of keeping bees and why we do it.</p>
+                    <a href="https://sababees.org/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>SPHP Physical Rehabilitation Clifton Park</h3>
+                    <h4>Exhibitor: Giant Operation Game & Bag of Bones</h4>
+                    <p>Play the giant game of operation and be able to name bones of the body</p>
+                    <a href="https://www.sphp.com/location/clifton-park-physical-rehabilitation">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>St Peter's Health Partners</h3>
+                    <h4>Exhibitor: Test Your Balance</h4>
+                    <p>Participants will challenge themselves using the 3 different senses of balance: proprioception,
+                        vestibular, and vision.</p>
+                    <a href="https://www.sphp.com/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>SUNY Cobleskill</h3>
+                    <h4>Exhibitor: SUNY Cobleskill Histotechnician Program</h4>
+                    <p>Students will have the opportunity to work with tissue and view diseased tissues of human and
+                        animal pathology. The demo offers hands-on participation for all students who are interested.
+                    </p>
+                    <a
+                        href="https://www.cobleskill.edu/academics/schools/liberal-arts-and-sciences/natural-sciences/histotechnician/">Exhibitor
+                        site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>SUNY Polytechnic Institute (Albany)</h3>
+                    <h4>Exhibitor: K-12 STEM Outreach at CNSE (College of Nanoscale Science and Engineering)</h4>
+                    <p>Table featuring resources and materials on the fields of science that contribute to the
+                        semiconductor industry: physics, chemistry, math and engineering</p>
+                    <a href="https://sunypoly.edu/k12-outreach.html">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Superposition STEM Club</h3>
+                    <h4>Exhibitor: Superposition STEM</h4>
+                    <p>Participants will have an opinion to perform two science experiments with static electricity.</p>
+                    <a href="https://www.instagram.com/shen_superposition/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Team 20</h3>
+                    <h4>Exhibitor: Robot Demonstration</h4>
+                    <p>Robot demonstration</p>
+                    <a href="https://sites.google.com/shenschools.org/first-team-20">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Town of Halfmoon</h3>
+                    <h4>Exhibitor: There's No Place Like...Halfmoon!</h4>
+                    <p>Participants will enter the "Wizard of Oz" in Halfmoon and spin the wheel to win packet of
+                        heirloom seeds </p>
+                    <a href="https://www.townofhalfmoon-ny.gov/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Tri-M</h3>
+                    <h4>Exhibitor: Tri-M</h4>
+                    <p>The science of sound! Learn all about how sound is created</p>
+                    <a href="https://www.instagram.com/shen_trim/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>TriNova Inc</h3>
+                    <h4>Exhibitor: Liquid Properties - pH and Density</h4>
+                    <p>Participants will learn about pH and density using various liquids (food safe), scales, pH
+                        indicators (red cabbage) and pH Probes/transmitters. Have equal amounts of sample fluids in
+                        mason jars which kids can weigh on mass scales to guess density. They will then mix the liquids
+                        and see how the differences in densities will cause the liquids to separate. Participants will
+                        then use a pH indicator solution as a pH indicator to guess the "order" of pH of the liquid
+                        using a color chart. These answers will then be verified using an Endress + Hauser pH probe by
+                        dipping it into the liquid. </p>
+                    <a href="https://trinovainc.com/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Two for the Road</h3>
+                    <h4>Exhibitor: Food Truck</h4>
+                    <p>MENU:</p>
+                    <a href="https://www.facebook.com/twofortheroadfood/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>U.S. Navy</h3>
+                    <h4>Exhibitor: Naval Science</h4>
+                    <p>Participants will make a boat out of aluminum foil, the goal is to make the boat buoyant enough
+                        to hold the highest amount of pennies. We also plan to have our SeaPerch kits available, which
+                        are PVC underwater robots. </p>
+                    <a href="https://www.navy.mil/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>UAlbany</h3>
+                    <h4>Exhibitor: UAlbany Dept. of Atmospheric and Environmental Science</h4>
+                    <p>Hands-on weather demonstration and information</p>
+                    <a href="">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Uncharted Wild</h3>
+                    <h4>Exhibitor: Uncharted Wild animal display</h4>
+                    <p>Have a variety of live animals for guests to look at and touch</p>
+                    <a href="https://www.facebook.com/unchartedwild/">Exhibitor site</a>
+                </div>
+            </div>
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>UNICEF Clubs USA</h3>
+                    <h4>Exhibitor: Climate and it's Impact on Children </h4>
+                    <p>On the week of April 24th to the 30th, UNICEF is celebrating World Immunization Week! We are
+                        planning on bringing a microscope, and a couple slides with different sets of bacteria that
+                        participants can help identify. In addition, we will include informational banners on the
+                        importance of getting vaccinated as well as provide other activities and prizes!</p>
+                    <a href="https://www.instagram.com/unicef.shen/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>WB Games New York </h3>
+                    <h4>Exhibitor: WB Games New York </h4>
+                    <p>Online Gaming Services </p>
+                    <a href="https://www.wbgamesny.com/">Exhibitor site</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Will Mars </h3>
+                    <h4>Exhibitor: Survival Science - Applying Science to Outdoor Recreation and Conservation</h4>
+                    <p>Survival Science curriculum focuses on connecting science to outdoor recreation (ie. chemistry of
+                        plants, wilderness medicine, mechanics of structures, physics, history, orienteering, mapping,
+                        etc.) or ecological conservation (organism identification, organism relationships, ecosystem
+                        management, clean water, etc.). Acitivites will include a variety of topics and focus mainly on
+                        hands on projects relating to the topics above.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Sponsors" class="tabcontent">
+        <h2>Special thanks to all of our sponsors that are indispensable in making SHDN happen!</h2>
+        <h3>Platinum</h3>
+        <div class="row justify-content-center align-items-center bottom-buffer">
+            <div class="col-sm">
+                <img src="images/GF.png" class="img-fluid">
+            </div>
+            <div class="col-sm">
+                <img src="images/albanybraces.png" class="img-fluid">
+            </div>
+            <div class="col-sm">
+                <img src="images/snhs.png" class="img-fluid" width="150" height="150"> Shenendehowa Chapter
+            </div>
+            <div class="col-sm">
+                <img src="images/senate.png" class="img-fluid" width="400">
+            </div>
+        </div>
+        <h3>Gold</h3>
+        <div class="row justify-content-center align-items-center bottom-buffer">
+            <div class="col-sm">
+                <img src="images/cis.png" class="img-fluid">
+            </div>
+            <div class="col-sm">
+                <img src="images/suncommon.png" class="img-fluid">
+            </div>
+            <div class="col-sm">
+                <img src="images/savvas.png" class="img-fluid">
+            </div>
+            <div class="col-sm">
+
+            </div>
+            <div class="col-sm">
+
+            </div>
+        </div>
+        <h3>Silver</h3>
+        <div class="row justify-content-center align-items-center bottom-buffer">
+            <div class="col-sm">
+                <img src="images/market32.png" class="img-fluid">
+            </div>
+            <div class="col-sm">
+                <img src="images/hmh.png" class="img-fluid">
+            </div>
+            <div class="col-sm">
+
+            </div>
+            <div class="col-sm">
+
+            </div>
+            <div class="col-sm">
+
+            </div>
+            <div class="col-sm">
+
+            </div>
+            <div class="col-sm">
+
+            </div>
+        </div>
+        <!--<h3>Bronze</h3>
+        <div class="row justify-content-center align-items-center bottom-buffer">
+            <div class="col-sm">
+                <h5>placeholder</h5>
+            </div>
+            <div class="col-sm">
+                <h5>placeholder</h5>
+            </div>
+            <div class="col-sm">
+                <h5>placeholder</h5>
+            </div>
+        </div>
+        -->
+    </div>
+    <div id="Registration" class="tabcontent">
+        <h2>Registration</h2>
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeDiEKCmYYLjFMK4KxkFGZnygigj-drd7G4JknFwgXKCqHAgQ/viewform?embedded=true"
+            width="640" height="2604" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+    <div id="Gallery" class="tabcontent">
+        <h2>Gallery</h2>
+        <div class="rowGallery">
+            <div class="columnGallery">
+                <img src="images/gallery/1.JPG">
+                <img src="images/gallery/2.JPG">
+                <img src="images/gallery/3.JPG">
+                <img src="images/gallery/4.JPG">
+                <img src="images/gallery/5.JPG">
+                <img src="images/gallery/6.JPG">
+                <img src="images/gallery/7.JPG">
+                <img src="images/gallery/8.JPG">
+            </div>
+            <div class="columnGallery">
+                <img src="images/gallery/9.JPG">
+                <img src="images/gallery/10.JPG">
+                <img src="images/gallery/11.JPG">
+                <img src="images/gallery/12.JPG">
+                <img src="images/gallery/13.JPG">
+                <img src="images/gallery/14.JPG">
+                <img src="images/gallery/15.JPG">
+            </div>
+            <div class="columnGallery">
+                <img src="images/gallery/16.JPG">
+                <img src="images/gallery/17.JPG">
+                <img src="images/gallery/18.JPG">
+                <img src="images/gallery/19.JPG">
+                <img src="images/gallery/20.JPG">
+                <img src="images/gallery/21.JPG">
+                <img src="images/gallery/22.JPG">
+            </div>
+            <div class="columnGallery">
+                <img src="images/gallery/23.JPG">
+                <img src="images/gallery/24.JPG">
+                <img src="images/gallery/25.JPG">
+                <img src="images/gallery/26.JPG">
+                <img src="images/gallery/27.JPG">
+                <img src="images/gallery/28.JPG">
+                <img src="images/gallery/29.JPG">
+                <img src="images/gallery/30.JPG">
+            </div>
+        </div>
+    </div>
+    <div id="ContactUs" class="tabcontent">
+        <h2>Contact Us</h2>
+        <div class="container mt-5">
+            <div class="row bottom-buffer">
+                <div class="col-sm">
+                    <h3>Jean Lorch</h3>
+                    <h4>Science 6-12 Academic Administrator</h4>
+                    <p>Shenendehowa CSD</br>
+                        (518) 881 – 0310 X 61520</p>
+                    <a href="mailto:lorcjean@shenschools.org?subject=SHDN Inquiry">lorcjean@shenschools.org</a>
+                </div>
+                <div class="col-sm">
+                    <h3>Stephanie Carlton</h3>
+                    <h4>Health Teacher</h4>
+                    <p>Shenendehowa CSD</p>
+                    <a href="mailto:carlstep@shenschools.org?subject=SHDN Inquiry">carlstep@shenschools.org</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
